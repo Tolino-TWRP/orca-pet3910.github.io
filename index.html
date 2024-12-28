@@ -17,8 +17,8 @@
         document.getElementById("barthing").style.padding = '10px '+w+'px';
       }
     }
-    function putURL(){
-      document.getElementById("url").innerText = window.location.href;
+    function putURL(obj){
+      obj.innerText = window.location.href;
     }
     updateWidth()
   </script>
@@ -82,7 +82,7 @@
     <b>rest of page</b><br>
     hi welcome to my website
     <br>
-    this is the URL: <p onload="putURL()" id="url"></p>
+    this is the URL: <p onload="putURL(this)" id="url"></p>
     <br>
     <!--<button><h1><a href="https://orcapet.is-a.dev/shared-knowledge">my shared knowledge</a></h1></button>-->
     <!--<h2> funi buttons made by friend <a href="https://rediblesky.my.canva.site/home">RedibleSky</a></h2>-->
